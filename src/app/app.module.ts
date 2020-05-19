@@ -3,10 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavBarComponent } from './shared/NavBar/nav-bar.component';
+import { FullBannerComponent } from './shared/full-banner/full-banner.component';
+import { ListTittlesComponent } from './shared/list-tittles/list-tittles.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBarComponent,
+    FullBannerComponent,
+    ListTittlesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
