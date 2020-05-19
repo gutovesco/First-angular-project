@@ -13,6 +13,6 @@ export class NavBarComponent implements OnInit{
   }
 
   ngOnInit(): void{
-    throw new Error('method not implemented')
+    console.log('method not implemented')
   }
 }
