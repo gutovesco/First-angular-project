@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'ListTittles',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-tittles.component.less']
 })
 export class ListTittlesComponent implements OnInit {
+
+  @Input() title: String;
+  @Input() list = [];
+
 
   constructor() { }
 
