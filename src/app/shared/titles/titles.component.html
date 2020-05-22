@@ -1,7 +1,7 @@
 <div class="d-flex flex-nowrap overflow-hidden">
 
-  <div class="title-item">
-    <video [src]="title.trailer" controls muted="muted"></video>
+  <div class="title-item" (mouseEnter)="playVideo()" (mouseLeave)="stopVideo()">
+    <video #trailer [src]="title.trailer" controls muted="muted"></video>
     <img [src]="title.cover" alt="Título">
     <div class="items">
         <div class="left-side">

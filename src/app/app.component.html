@@ -1,4 +1,4 @@
-<NavBar></NavBar>
+<NavBar [opened]="menuOpened" (menuToggle)="setMenuState($event)"></NavBar>
 
   <div class="content-fluid">
 
@@ -11,3 +11,5 @@
   </div>
 
   <Footer></Footer>
+
+  <div class="backdrop" (click)="closeMenu()" *ngIf="menuOpened"></div>

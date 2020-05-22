@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'My-app';
 
+  menuOpened = false
+
   listTitles = [{
     trailer: 'assets/videos/trailer_guardioes_da_galaxia_1080p.mp4',
     cover: 'assets/images/guardios-da-galaxia.jpg',
@@ -42,4 +44,12 @@ export class AppComponent {
       parts: 1,
       categories: ['Comédia', 'Suspense', 'Ação']
     },]
+
+    setMenuState(state: boolean){
+      this.menuOpened = state;
+    }
+
+    closeMenu(){
+      this.menuOpened = false;
+    }
 }
